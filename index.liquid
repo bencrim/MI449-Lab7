@@ -1,7 +1,13 @@
 ---
 layout: layout.liquid
-title: 11ty Boilerplate
+title: Quote Generator
 ---
 
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+<body class="flex bg-amber-50 h-screen items-center justify-center"></body>
+    <div id="container" class="flex flex-col items-center">
+        <img src="/images/quote.png" alt="quotation marks" class="">
+        <p id="quoteText" class="max-w-prose text-center font-serif text-base/6 text-xl normal-case"></p>
+        <h2 id="quoteAuthor" class="italic mt-1"></h2>
+        <button class="shadow-lg h-10 px-6 font-semibold rounded-md object-position: bottom bg-orange-500 hover:bg-orange-400 text-white mt-6" type="submit" onclick="generate()">Generate</button>
+    </div>
+</body>
